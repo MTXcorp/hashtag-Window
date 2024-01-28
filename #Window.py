@@ -54,3 +54,5 @@ while SessionStatus == "in cmd":
     if cmdinput.lower() == "all version":
         print("FhashWindow Version: " + FhashWindow.Version)
         print("#Window Version: " + Version)
+    if cmdinput.lower() == "cleanup":
+        clean()
