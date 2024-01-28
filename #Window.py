@@ -1,6 +1,6 @@
 import os as sys
 from FhashWindow import FhashWindow
-from fhashtestapp import FhashWindow
+
 SessionStatus = "define"
 Version = " V2.0"
 Name = "#Window"
@@ -53,6 +53,4 @@ while SessionStatus == "in cmd":
             print("Try Again!")
     if cmdinput.lower() == "all version":
         print("FhashWindow Version: " + FhashWindow.Version)
-        print("F#Window Version: " + Version)
-    if cmdinput.lower() == "fhashtestapp":
-        
+        print("#Window Version: " + Version)
