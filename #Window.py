@@ -1,13 +1,12 @@
 import os as sys
-
+from FhashWindow import FhashWindow
+from fhashtestapp import FhashWindow
 SessionStatus = "define"
 Version = " V2.0"
 Name = "#Window"
 TypeCmd = "in cmd"
 rootUserName = "change_me"
 rootPassword = "changeme"
-
-
 
 
 
@@ -48,3 +47,12 @@ while SessionStatus == "in cmd":
             print("Try Again!")
     if cmdinput.lower() == "supercmd " + "version":
         hashcallinput = input("|Password of " + rootUserName + ":|>")
+        if hashcallinput == rootPassword:
+            print(Version)
+        else:
+            print("Try Again!")
+    if cmdinput.lower() == "all version":
+        print("FhashWindow Version: " + FhashWindow.Version)
+        print("F#Window Version: " + Version)
+    if cmdinput.lower() == "fhashtestapp":
+        
