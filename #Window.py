@@ -1,5 +1,7 @@
 import os as sys
 from FhashWindow import FhashWindow
+from hash_Settings import hash_Settings
+from hash_Components import clean
 
 SessionStatus = "define"
 Version = " V2.0"
@@ -9,16 +11,6 @@ rootUserName = "change_me"
 rootPassword = "changeme"
 
 
-
-def clean():
-    if sys.name == "nt":
-        sys.system("cls")
-    else:
-        sys.system("clear")
-def Folder():
-    sys.system("dir")
-def text_edit():
-    clean()
 SessionStatus = "Cleaning"
 clean()
 SessionStatus = "in cmd"
@@ -56,3 +48,5 @@ while SessionStatus == "in cmd":
         print("#Window Version: " + Version)
     if cmdinput.lower() == "cleanup":
         clean()
+    if cmdinput.lower() == "settings":
+        
