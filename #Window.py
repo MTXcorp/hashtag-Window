@@ -1,5 +1,4 @@
 import os as sys
-from FhashWindow import FhashWindow
 from hash_Settings import hash_Settings
 from hash_Components import clean
 
@@ -12,7 +11,7 @@ rootPassword = "changeme"
 
 
 SessionStatus = "Cleaning"
-clean()
+clean.clean()
 SessionStatus = "in cmd"
 print("#Window V2.0")
 while SessionStatus == "in cmd":
@@ -20,12 +19,12 @@ while SessionStatus == "in cmd":
     if cmdinput.lower() == "version":
         print(Name + Version)
     if cmdinput.lower() == "exit":
-        clean()
+        clean.clean()
         exit("Exiting Python And #Window...")
     if cmdinput.lower() == "supercmd " + "exit":
         hashcallinput = input("|Password of " + rootUserName + ":|>")
         if hashcallinput.lower() == rootPassword:
-           clean()
+           clean.clean()
            exit("[root]" + "Exiting Python And #Window...")
         else:
             print("Try Again!")
@@ -43,10 +42,7 @@ while SessionStatus == "in cmd":
             print(Version)
         else:
             print("Try Again!")
-    if cmdinput.lower() == "all version":
-        print("FhashWindow Version: " + FhashWindow.Version)
+    if cmdinput.lower() == "version " + "all":
         print("#Window Version: " + Version)
     if cmdinput.lower() == "cleanup":
-        clean()
-    if cmdinput.lower() == "settings":
-        
+        clean.clean()
