@@ -8,6 +8,8 @@ Name = "#Window"
 TypeCmd = "in cmd"
 rootUserName = "change_me"
 rootPassword = "changeme"
+UserUserName = "user"
+UserPassword = "changeme"
 
 
 SessionStatus = "Cleaning"

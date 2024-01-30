@@ -1,0 +1,19 @@
+bugs:
+    hash_componentlist:
+        __init__.py:
+            No Bugs.
+        ComponentList.py:
+            [Bug],["import" Bug] Author["MTXcorp"] Time of Found Bug:[2024.01.30 T:'21:33'] Name:"Not import
+            ing a package to code. Even Though The Package Exists."
+            Data Of Post:
+            "Error Code:
+             'Traceback (most recent call last):
+                File "/home/eryk/Dokumenty/Cloned_Repos/MTXcorp/hashtag-window/hashtag-window/hash_componentlist/ComponentList.py", line 10, in <module>
+                  from hash_components import clean #The "clean.py" Package Is Used To Cleanup The Screen.##############
+              ModuleNotFoundError: No module name 'hash_Components'
+             '
+             So The 'hash_Components' Module Exists, But The Script Doesn't See It. The Module's Name is 'hash_Components'
+             And The File's Name is 'clean.py'
+    hash_Components:
+        __init__.py:
+            No Bugs.
