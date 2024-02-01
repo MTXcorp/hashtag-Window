@@ -1,7 +1,7 @@
 import os as sys
 from hash_Settings import hash_Settings
 from hash_Components import clean
-
+from hash_Components import folder
 SessionStatus = "define"
 Version = " V2.0"
 Name = "#Window"
@@ -14,9 +14,16 @@ UserPassword = "changeme"
 
 SessionStatus = "Cleaning"
 clean.clean()
-SessionStatus = "in cmd"
-print("#Window V2.0")
+SessionStatus = "reqlogon"
+print("#Window V2.0 Logon")
+usernameinput = input("|Username:|>")
+if usernameinput == UserUserName:
+    passwordinput = input("|Password:|>")
+    if passwordinput == UserPassword:
+        clean.clean()
+        SessionStatus = "in cmd"
 while SessionStatus == "in cmd":
+    print("#Window V2.0")
     cmdinput = input("|>")
     if cmdinput.lower() == "version":
         print(Name + Version)
@@ -26,12 +33,12 @@ while SessionStatus == "in cmd":
     if cmdinput.lower() == "supercmd " + "exit":
         hashcallinput = input("|Password of " + rootUserName + ":|>")
         if hashcallinput.lower() == rootPassword:
-           clean.clean()
-           exit("[root]" + "Exiting Python And #Window...")
+            clean.clean()
+            exit("[root]" + "Exiting Python And #Window...")
         else:
             print("Try Again!")
     if cmdinput.lower() == "files":
-        sys.system("dir")
+        folder.folder()
     if cmdinput.lower() == "supercmd " + "files":
         hashcallinput = input("|Password of " + rootUserName + ":|>")
         if hashcallinput == rootPassword:
