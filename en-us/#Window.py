@@ -22,8 +22,9 @@ if usernameinput == UserUserName:
     if passwordinput == UserPassword:
         clean.clean()
         SessionStatus = "in cmd"
+        print("#Window V2.0")
 while SessionStatus == "in cmd":
-    print("#Window V2.0")
+    
     cmdinput = input("|>")
     if cmdinput.lower() == "version":
         print(Name + Version)
