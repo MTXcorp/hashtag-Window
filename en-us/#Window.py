@@ -55,3 +55,6 @@ while SessionStatus == "in cmd":
         print("#Window Version: " + Version)
     if cmdinput.lower() == "cleanup":
         clean.clean()
+    if cmdinput.lower() == "setup":
+        clean()
+        
