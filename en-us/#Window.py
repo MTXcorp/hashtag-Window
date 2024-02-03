@@ -57,5 +57,5 @@ while SessionStatus == "in cmd":
     if cmdinput.lower() == "cleanup":
         clean.clean()
     if cmdinput.lower() == "setup":
-        clean()
-        
+        clean.clean()
+        hash_Settings.settings()
