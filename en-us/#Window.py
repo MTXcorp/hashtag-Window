@@ -54,8 +54,18 @@ while SessionStatus == "in cmd":
             print("Try Again!")
     if cmdinput.lower() == "version " + "all":
         print("#Window Version: " + Version)
+        print("#Setup Version: " + hash_Settings.Version)
     if cmdinput.lower() == "cleanup":
         clean.clean()
     if cmdinput.lower() == "setup":
         clean.clean()
         hash_Settings.settings()
+    if cmdinput.lower() == "bash-mode":
+        SessionStatus = "bshmod"
+        while SessionStatus == "bshmod":
+            bashinput = input("|BASH Mode|>")
+            if bashinput == "exit bash-mode":
+                SessionStatus = "in cmd"
+            else:
+                sys.system(bashinput)
+            
