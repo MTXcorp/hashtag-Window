@@ -68,6 +68,3 @@ while SessionStatus == "in cmd":
                 SessionStatus = "in cmd"
             else:
                 sys.system(bashinput)
-    if cmdinput.lower() == "return to bash":
-        print("To Return To #Window, Type In 'Exit'.")
-        sys.system("bash")
