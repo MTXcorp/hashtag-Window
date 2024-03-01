@@ -42,7 +42,7 @@ while SessionStatus == "in cmd":
         else:
             print("Try Again!")
     if cmdinput.lower() == "files":
-        folder.folder()
+        CList.folder.folder()
     if cmdinput.lower() == "supercmd " + "files":
         hashcallinput = input("|Password of " + rootUserName + ":|>")
         if hashcallinput == rootPassword:
@@ -59,9 +59,9 @@ while SessionStatus == "in cmd":
         print("#Window Version: " + Version)
         print("#Setup Version: " + hash_Settings.Version)
     if cmdinput.lower() == "cleanup":
-        clean.clean()
+        CList.clean.clean()
     if cmdinput.lower() == "setup":
-        clean.clean()
+        CList.clean.clean()
         hash_Settings.settings()
     if cmdinput.lower() == "bash-mode":
         SessionStatus = "bshmod"
