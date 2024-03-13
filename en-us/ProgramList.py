@@ -1,5 +1,6 @@
 ##########################################################
 # #Window Program List####################################
 ##########################################################
-#test
-from hash_Settings import hash_Settings
+#Apps Installed:
+import hash_Settings
+import hash_editor

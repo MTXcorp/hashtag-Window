@@ -3,7 +3,7 @@ import hash_Window_Config as HWConfig
 import os as sys
 import time as clock
 
-DevSprayInput = ""
+DevSprayInput = "none"
 
 __version__ = "1.1"
 def cleanscr():

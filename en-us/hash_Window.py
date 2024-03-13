@@ -1,5 +1,5 @@
 import os as sys
-from hash_Settings import hash_Settings
+import hash_Settings
 import hash_Window_Config
 import ComponentList as CList
 
@@ -71,3 +71,18 @@ while SessionStatus == "in cmd":
                 SessionStatus = "in cmd"
             else:
                 sys.system(bashinput)
+    if cmdinput.lower() == "move":
+        print("Mover Tool 1.2 (exit to Quit Mover.)")
+        print("What File To Move?")
+        moveinput1 = input("|Mover Tool 1.2|>")
+        if moveinput1 == "exit":
+            moveinput2 = input("|Press Enter To Exit.|>")
+        else:
+            print("Where To Move?")
+            moveinput2 = input("|Mover Tool 1.2|>")
+            sys.system("move " + moveinput1 + moveinput2)
+    if cmdinput.lower() == "file manager":
+        while SessionStatus == "File Manager":
+            print("#Hash File Manager - /b Style - Drive C:")
+            sys.system("dir /b")
+            hashfilemanagerinput1 = input("|Hash File Manager|>")

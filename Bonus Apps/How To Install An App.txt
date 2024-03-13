@@ -1,0 +1,6 @@
+How To Install An App In Hash Window.
+1. Drag Your Desired Installer To The Folder Where Your hash_Window.py file Is.
+2. Open A Terminal
+3. Go To Your hash Window Directory.
+4. On Windows, Type In: 'python "<name_of_installer>.py"' On Linux, Type In: 'python3 "<name_of_installer>.py"'
+5. Follow The Instructions On Screen.
